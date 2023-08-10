@@ -1,0 +1,207 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  background-size: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Layanan
+--------------------------------------------------------------*/
+.layanan .bg {
+  transition: all 0.5s;
+  background: rgba(158, 0, 255, 0.7);
+  padding: 10px 0 15px 0;
+  border-radius: 36px;
+}
+.layanan h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 30px;
+}
+.layanan h4 {
+  background: #0075FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 62px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 75px;
+  color: #FFFFFF;
+  padding: 0px 50px;
+  margin-bottom: 35px;
+}
+
+.layanan h4:hover {
+  background: #489cfd;
+}
+
+/*--------------------------------------------------------------
+# Selesai
+--------------------------------------------------------------*/
+.selesai .bg {
+  transition: all 0.5s;
+  background: rgba(158, 0, 255, 0.7);
+  padding: 10px 0 15px 0;
+  border-radius: 36px;
+}
+.selesai p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 70px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 25px 50px 25px;
+}
+.selesai h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-align: right;
+  padding: 50px 15px 10px 0;
+}
+
+/*--------------------------------------------------------------
+# Video Background
+--------------------------------------------------------------*/
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.content {
+  position: fixed;
+  bottom: 0;
+  background: #9E00FF;
+  color: #f1f1f1;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Time
+--------------------------------------------------------------*/
+#time {
+  transition: all 0.5s;
+  background: #FF0000;
+  padding: 10px 52px 0 52px;
+  box-shadow: 10px 0px 4px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  font-size: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  padding: 10px 0;
+  border: none;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Hiden Print
+--------------------------------------------------------------*/
+@media print {
+  .hidden-print,
+  .hidden-print * {
+      display: none !important;
+  }
+}
+@media print {
+  header, footer, aside, nav, form, iframe, .menu, .hero, .adslot {
+    display: none !important;
+  }
+}
+/*--------------------------------------------------------------
+# Output Print
+--------------------------------------------------------------*/
+.ticket {
+  width: 400px;
+  max-width: 400px;
+}
+.ticket h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 140px;
+  color: #444;
+  text-align: center;
+}
+.ticket h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 32px;
+  color: #444;
+  text-align: center;
+  line-height: 45px;
+  padding: 50px 0px;
+}
+img {
+  max-width: inherit;
+  width: inherit;
+}
+
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+.logo {
+  background: rgba(255, 255, 255, 0.7);
+  margin: 60px;
+  padding: 20px 17px 20px 15px;
+  border-radius: 20px;
+}
+.logo .logo-img {
+  height: auto;
+  width: 370px;
+}
+
+/*--------------------------------------------------------------
+# Hidden
+--------------------------------------------------------------*/
+input[type="radio"]{
+  visibility:hidden;
+  display: none;
+}
+input[type="radio"]:checked{
+  visibility:hidden;
+  display: none;
+}
+
+.is-hide {
+  visibility: hidden !important;
+  display: none;
+}
+
+.not-hide {
+  visibility: visible !important;
+}

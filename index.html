@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ticketing</title>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body> 
+<div class="hidden-print">
+
+  <!-- ============== VIDEO ============== -->
+  <div class="start">
+    <video autoplay muted id="player" class="video" src="assets/video/video1.mp4" type="video/mp4"></video>
+  </div>
+
+  <!-- ============== STEP 1 - Pilih Layanan ============== -->
+  <section id="s1" class="layanan d-none d-flex align-items-center position-absolute top-50 start-50 translate-middle">
+    <div class="bg d-flex flex-column justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row justify-content-center">
+            <div class="row justify-content-center">
+                <h2>Pilih Layanan</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 d-flex align-items-center pt-4">
+                  <label class="nilai"><input id="PrintService" class="rdLayanan" type="radio" name="type" value="service" />
+                    <h4>SERVICE</h4>
+                  </label>
+              </div>
+              <div class="col-4 d-flex align-items-center pt-4">
+                <label class="nilai"><input id="PrintAmbil" class="rdLayanan" type="radio" name="type" value="ambil" />
+                  <h4>AMBIL</h4>
+                </label>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- ============== STEP 2 - Selesai ============== -->
+  <section id="s2" class="selesai d-none d-flex align-items-center position-absolute top-50 start-50 translate-middle">
+    <div class="bg d-flex flex-column justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <p id="pesan"></p>
+        </div>
+        <div class="col-3 position-absolute bottom-0 end-0">
+          <h1>Terima Kasih</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <!-- Footer -->
+  <div class="content">
+    <div class="row">
+      <div class="col-2 d-flex">
+        <button id="time"></button>
+      </div>
+      <div class="col-9 mt-3">
+        <p>Sentuh Layar Untuk Pilih Layanan</p>
+      </div>
+    </div>
+  </div>
+
+</div> 
+
+  <!-- ============== OUTPUT PRINT ============== -->
+  <div class="ticket">
+    <img src="assets/img/logo-platinum.png" alt="Logo">
+    <h2 id="date_time"></h2>
+    <h1>001</h1>
+    <h2>Terimakasih</h2>
+  </div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">window.onload = time('time');</script>
+  <script type="text/javascript">window.onload = date_time('date_time');</script>
+
+</body>
+
+</html>
